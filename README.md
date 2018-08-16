@@ -11,6 +11,7 @@ To get NetBox up and running:
 ```
 $ git clone 
 $ cd netbox-kubernetes
+$ gcloud container clusters create <clustername>
 $ gcloud container clusters get-credentials <clustername> --zone <zone> --project <project>
 $ kubectl apply -f netbox-namespace.yaml 
 $ kubectl apply -f configmap.yaml --namespace netbox
